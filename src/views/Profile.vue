@@ -83,7 +83,7 @@ function toUpper(string) {
             class="py-2 px-5 rounded-xl bg-white font-medium text-gray-500 hover:text-emerald-500 border-2 border-gray-200 hover:border-emerald-300 active:border-emerald-500">
             Prev</router-link>
         </template>
-        <template v-if="+route.params.slug + 1 < 151">
+        <template v-if="+route.params.slug + 1 < 152">
           <router-link :to="`/profile/${+route.params.slug + 1}`"
             class="py-2 px-5 rounded-xl bg-white font-medium text-gray-500 hover:text-emerald-500 border-2 border-gray-200 hover:border-emerald-300 active:border-emerald-500">
             Next</router-link>

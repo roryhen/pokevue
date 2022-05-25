@@ -18,7 +18,7 @@ function toUpper(string) {
 }
 
 (async () => {
-  const pokeData = await fetch(`https://pokeapi.co/api/v2/pokemon?offset=0&limit=150`).then(r => r.json())
+  const pokeData = await fetch(`https://pokeapi.co/api/v2/pokemon?offset=0&limit=151`).then(r => r.json())
 
   state.pokemon = await pokeData.results;
   state.idLookup = await pokeData.results.reduce((prev, curr, i) => {
